@@ -61,6 +61,94 @@
 
     <div class="gap">
     </div>
+    <!-- 附近店铺 -->
+    <div class="nearby">
+      <h3 class="nearby__title">附近店铺</h3>
+      <div class="nearby__item">
+        <img class="nearby__item__img" src="http://www.dell-lee.com/imgs/vue3/near.png" alt="">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">会员享受满100减40(本月内)</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img class="nearby__item__img" src="http://www.dell-lee.com/imgs/vue3/near.png" alt="">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">会员享受满100减40(本月内)</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img class="nearby__item__img" src="http://www.dell-lee.com/imgs/vue3/near.png" alt="">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">会员享受满100减40(本月内)</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img class="nearby__item__img" src="http://www.dell-lee.com/imgs/vue3/near.png" alt="">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">会员享受满100减40(本月内)</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img class="nearby__item__img" src="http://www.dell-lee.com/imgs/vue3/near.png" alt="">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">会员享受满100减40(本月内)</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img class="nearby__item__img" src="http://www.dell-lee.com/imgs/vue3/near.png" alt="">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">会员享受满100减40(本月内)</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img class="nearby__item__img" src="http://www.dell-lee.com/imgs/vue3/near.png" alt="">
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">会员享受满100减40(本月内)</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- 底部docker -->
@@ -89,12 +177,13 @@
 @import './style/mixins.scss';
   // 顶部
   .wrapper {
+    overflow-y: auto;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: .5rem;
-    padding: 0 .18rem;
+    padding: 0 .18rem .15rem .18rem;
   }
   // 位置
   .position {
@@ -167,6 +256,48 @@
     margin: 0 -.18rem;
     height: .1rem;
     background-color: $contentBgColor;
+  }
+
+  // 附近店铺
+  .nearby {
+    &__title {
+      margin: .16rem 0 .04rem 0;
+      font-size: .18rem;
+      font-weight: 400;
+      color: $contentFontColor;
+    }
+    &__item {
+      display: flex;
+      &__img {
+        margin-right: .16rem;
+        width: .56rem;
+        height: .56rem;
+      }
+    }
+    &__content {
+      flex: 1;
+      padding-bottom: .12rem;
+      border-bottom: 1px solid $contentBgColor;
+      &__title {
+        line-height: .22rem;
+        font-size: .16rem;
+        color: $contentFontColor;
+      }
+      &__tags {
+        margin-top: .08rem;
+        line-height: .18rem;
+        font-size: .13rem;
+      }
+      &__tag {
+        margin-right: .16rem;
+      }
+      &__highlight {
+        margin: .08rem 0 0 0;
+        color: #E93B3B;
+        line-height: .18rem;
+        font-size: .13rem;
+      }
+    }
   }
   // 底部docker
   .docker {
